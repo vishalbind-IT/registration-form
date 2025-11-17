@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-box">Modern Registration Form</div>
+
+    <div class="form-box">
+        <div class="form-title">Student Registration Form</div>
+
+        <form>
+
+            <div class="row">
+                <div class="col">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter first name">
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter last name">
+                </div>
+            </div>
+
+            <label>Date of Birth</label>
+            <div class="row">
+                <div class="col">
+                    <select>
+                        <option>Day</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select>
+                        <option>Month</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select>
+                        <option>Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Email ID</label>
+                    <input type="email" placeholder="Enter email address">
+                </div>
+                <div class="col">
+                    <label>Mobile Number</label>
+                    <input type="text" placeholder="Enter 10-digit mobile number">
+                </div>
+            </div>
+
+            <label>Gender</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Address</label>
+            <input type="text" placeholder="Enter your full address">
+
+            <div class="row">
+                <div class="col">
+                    <label>City</label>
+                    <input type="text" placeholder="Enter city">
+                </div>
+                <div class="col">
+                    <label>PIN Code</label>
+                    <input type="text" placeholder="Enter 6-digit PIN code">
+                </div>
+                <div class="col">
+                    <label>State</label>
+                    <input type="text" placeholder="Enter state">
+                </div>
+            </div>
+
+            <label>Country</label>
+            <select>
+                <option>Select country</option>
+            </select>
+
+            <label>Hobbies</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Drawing</label>
+                <label><input type="checkbox"> Singing</label>
+                <label><input type="checkbox"> Dancing</label>
+                <label><input type="checkbox"> Sketching</label>
+                <label><input type="checkbox"> Others</label>
+            </div>
+
+            <label>Qualification</label>
+
+            <table>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+            <label>Courses Applied For</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="course"> BCA</label>
+                <label><input type="radio" name="course"> B.Com</label>
+                <label><input type="radio" name="course"> B.Sc</label>
+                <label><input type="radio" name="course"> B.A</label>
+            </div>
+
+            <div class="button-area">
+                <button class="reset-btn">Reset</button>
+                <button class="submit-btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="top-box" style="margin-top:40px; background:#e0fff1; color:#2c7a58;">
+        Professional Registration Form
+    </div>
+
+</div>
+
+</body>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background:#f2f4f8;
+    padding:40px 0;
+}
+
+.container{
+    width:80%;
+    max-width:950px;
+    margin:40px auto;
+}
+
+
+.top-box{
+    width:100%;
+    background:white;
+    padding:18px 0;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    font-size:20px;
+    font-weight:600;
+    color:#4c4c4c;
+}
+
+
+.form-box{
+    width:100%;
+    margin-top:25px;
+    background:linear-gradient(90deg,#be2edd,#ffcccc);
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    padding-bottom:30px;
+}
+
+.form-title{
+    text-align:center;
+    font-size:24px;
+    padding:18px 0;
+    font-weight:700;
+    color:white;
+}
+
+form{
+    background:white;
+    margin:0 20px 20px 20px;
+    padding:25px 25px;
+    border-radius:10px;
+}
+
+
+label{
+    font-weight:600;
+    display:block;
+    margin-bottom:6px;
+    margin-top:18px;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.row .col{
+    flex:1;
+}
+
+
+
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:10px;
+}
+
+.checkbox-group label{
+    font-weight:500;
+    margin-top:0;
+}
+
+
+table{
+    width:100%;
+    margin-top:15px;
+    border-collapse:collapse;
+}
+
+table th, table td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:left;
+    font-size:14px;
+}
+
+table th{
+    background:#f7f7f7;
+    font-weight:600;
+}
+
+
+.button-area{
+    margin-top:30px;
+    text-align:right;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    font-size:15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.reset-btn{
+    background:#ddd;
+}
+
+.submit-btn{
+    background:#d81b60;
+    color:white;
+    margin-left:10px;
+}
+
+</style>
+</html>
